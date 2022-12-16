@@ -1,18 +1,19 @@
-[2022-12-16 08:52:22,489] INFO in app: JSON payload:
+[2022-12-16 06:20:05,766] INFO in app: JSON payload:
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2022-12-16 08:52:22,507] INFO in app: Inference payload DataFrame:
+[2022-12-16 06:20:05,780] INFO in app: Inference payload DataFrame:
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2022-12-16 08:52:22,519] INFO in app: Scaling Payload:
+[2022-12-16 06:20:05,792] INFO in app: Scaling Payload:
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-172.17.0.1 - - [16/Dec/2022 07:51:22] "POST /predict HTTP/1.1" 200 -
-[2022-12-16 09:10:54,011] INFO in app: JSON payload:
-{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2022-12-16 09:10:54,054] INFO in app: Inference payload DataFrame:
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  6.575  296.0     15.3  396.9   4.98
-[2022-12-16 09:10:54,065] INFO in app: Scaling Payload:
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  6.575  296.0     15.3  396.9   4.98
-172.17.0.1 - - [16/Dec/2022 08:07:54] "POST /predict HTTP/1.1" 200 -
+[2022-12-16 06:20:05,795] INFO in app: Prediction Result: [20.35373177134412]
+172.17.0.1 - - [16/Dec/2022 06:20:05] "POST /predict HTTP/1.1" 200 -
+
+#Output prediction script make_predictions.sh
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   260  100    48  100   212    786   3475 --:--:-- --:--:-- --:--:--  4262{
+  "prediction": [
+    20.35373177134412
+  ]
+}
